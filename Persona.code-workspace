@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": "packages/contracts",
+      "name": "contracts"
+    },
+    {
+      "path": "packages/circuits",
+      "name": "circuits"
+    },
+    {
+      "path": ".",
+      "name": "root"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/artifacts": true,
+      "**/cache": true,
+      "**/typechain-types": true,
+      "**/coverage": true,
+      "**/.pnpm-store": true,
+      "**/dist": true,
+      "**/build": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/artifacts": true,
+      "**/cache": true,
+      "**/typechain-types": true
+    },
+    "files.associations": {
+      "*.circom": "javascript"
+    }
+  }
+}

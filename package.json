@@ -1,0 +1,17 @@
+{
+  "name": "persona",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "pnpm --filter contracts compile",
+    "test": "pnpm --filter contracts test",
+    "deploy:localhost": "pnpm --filter contracts deploy:localhost",
+    "deploy:testnet": "pnpm --filter contracts deploy:testnet",
+    "clean": "pnpm --filter contracts clean",
+    "dev": "pnpm --filter webapp dev",
+    "build:webapp": "pnpm --filter webapp build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "network": "monad_testnet",
+  "chainId": 10143,
+  "deployer": "0xd35109Ae81aCFebbfB57d5EB999BF9D6e12aD679",
+  "timestamp": "2026-03-09T13:27:15.213Z",
+  "contracts": {
+    "Groth16Verifier": "0x0872fd5812D243319cE2170178bef32aA781aCFC",
+    "PersonaToken": "0xF4587c4E87d2a46031d872048F7eB014d73d8974",
+    "IdentityRegistry": "0xE050F7307F035BE9cB5d077792Bd5133b9B2f18b"
+  }
+}

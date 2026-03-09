@@ -1,0 +1,13 @@
+{
+  "name": "circuits",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "bash scripts/compile.sh",
+    "test": "echo 'Run compile.sh first, then use snarkjs to test witness generation'"
+  },
+  "devDependencies": {
+    "snarkjs": "^0.7.4",
+    "circomlib": "^2.0.5"
+  }
+}

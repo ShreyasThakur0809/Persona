@@ -1,0 +1,45 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ── Hardhat ───────────────────────────────────────────────────────────────────
+packages/contracts/artifacts/
+packages/contracts/cache/
+packages/contracts/typechain-types/
+packages/contracts/coverage/
+packages/contracts/coverage.json
+
+# ── Circuit build outputs (intermediate, not needed in git) ───────────────────
+packages/circuits/build/
+*.r1cs
+*.sym
+*.ptau
+verification_key.json
+
+# WASM and zkey: ignore everywhere EXCEPT webapp/public/circuits
+# (those are static assets the frontend serves to browsers)
+*.wasm
+*.zkey
+!packages/webapp/public/circuits/*.wasm
+!packages/webapp/public/circuits/*.zkey
+
+# ── Next.js ───────────────────────────────────────────────────────────────────
+packages/webapp/.next/
+packages/webapp/out/
+
+# ── Environment — NEVER commit secrets ────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Deployments (kept in git — useful addresses, no secrets) ──────────────────
+# packages/contracts/deployments/
+
+# ── Claude Code ───────────────────────────────────────────────────────────────
+.claude/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+.DS_Store
+*.log
+dist/
+.turbo/
